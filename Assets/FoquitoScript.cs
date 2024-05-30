@@ -50,6 +50,8 @@ public class FoquitoScript : MonoBehaviour
 
     public void ActivateRepeating(float t)
     {
+
+        CancelInvoke();
         InvokeRepeating(nameof(ActivateNextLight),0,t);
     }
 }
